@@ -18,10 +18,12 @@ if (Meteor.isServer) {
     const interests = [interestName];
     const picture = 'http://philipmjohnson.org/headshot.jpg';
     const title = 'Professor Computer Science';
+    const location = 'Honolulu, HI';
     const github = 'http://github.com/philipjohnson';
     const facebook = 'http://github.com/philipjohnson';
     const instagram = 'http://github.com/philipjohnson';
-    const defineObject = { firstName, lastName, username, bio, interests, picture, title, github, facebook, instagram };
+    const defineObject = { firstName, lastName, username, bio, interests, picture, title,
+      location, github, facebook, instagram };
 
     before(function setup() {
       removeAllEntities();
